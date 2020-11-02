@@ -6,7 +6,37 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', '{{ config("GoogleAnalytics.trackingId") }}', 'auto');
+    {% set webstoreConfig = services.webstoreConfig.getWebstoreConfig() %}
+    {% if webstoreConfig.webstoreId == 0 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId0") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 1 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId1") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 2 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId2") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 3 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId3") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 4 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId4") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 5 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId5") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 6 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId6") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 7 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId7") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 8 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId8") }}', 'auto');
+    {% endif %}
+    {% if webstoreConfig.webstoreId == 9 %}
+    ga('create', '{{ config("GoogleAnalytics.trackingId9") }}', 'auto');
+    {% endif %}
     ga('require', 'ecommerce');
 
     {% if anonymizeIP  %}
@@ -16,9 +46,8 @@
     ga('send', 'pageview');
 
     {% set shippingCosts = 0 %}
-    {% set webstoreConfig = services.webstoreConfig.getWebstoreConfig() %}
     {% set useGross = config("GoogleAnalytics.submitGrossPrices") == "true" %}
-    
+
     {% if trackOrder %}
         {% set data = services.customer.getLatestOrder() %}
         {% if data is defined %}

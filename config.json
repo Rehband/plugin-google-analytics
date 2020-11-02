@@ -4,10 +4,82 @@
     "Config.SettingsTab": {
       "label": "Config.SettingsTab",
       "formFields": {
-        "trackingId": {
+        "trackingId0": {
           "type": "inputText",
           "required": false,
-          "label": "Config.trackingIdLabel",
+          "label": "Config.trackingId0Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId1": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId1Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId2": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId2Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId3": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId3Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId4": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId4Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId5": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId5Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId6": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId6Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId7": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId7Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId8": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId8Label",
+          "options": {
+            "defaultValue": ""
+          }
+        },
+        "trackingId9": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.trackingId9Label",
           "options": {
             "defaultValue": ""
           }
